@@ -8,6 +8,9 @@ c=np.array([5.,1.])
 def N(v):
     return sum([c for c in v])
 
+def rad_to_deg(r):
+    return r*180/np.pi
+
 def virage(a,b,c,r): 
     """
     ENTREE :
@@ -28,7 +31,17 @@ def virage(a,b,c,r):
     h = r*np.tan(alpha/2)
     return alpha,h
 
-print(virage(a,b,c,1))
+
+alpha,h=virage(a,b,c,1)
+print(h,rad_to_deg(alpha))
+
+
+def points_vers_circuit(points:list):
+    if len(points) < 3 :
+        print("Erreur : nombre de point insuffisant")
+        exit()
+    a,b,c=point[:2]
+    alpha=np.arccos()
 
 
 
