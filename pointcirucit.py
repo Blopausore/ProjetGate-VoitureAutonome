@@ -19,7 +19,6 @@ points=[[a,0.5],[b,0.2],[c,0.5],[d,0.1]]
 def N(v):
     return np.sqrt(sum([c**2 for c in v]))
 
-
 def rad_to_deg(r):
     return r*180/np.pi
 
@@ -51,7 +50,6 @@ def points_vers_circuit(points:list):
     if len(points) < 3 :
         print("Erreur : nombre de point insuffisant")
         exit()
-    alpha0=init_alpha(points[-1][0],points[-2][0])
     point0=points[-1]
     point1=points[-2]
     circuit=[]
