@@ -46,31 +46,34 @@ def virage(a,b,c,r):
 alpha,h=virage(a,b,c,1)
 print(h,rad_to_deg(alpha))
 
+def alpha(v1,v2):
+    return np.arccos(np.dot(v1,v2)/(N(v1)*N(v2)))
+
 def points_vers_circuit(points:list):
     if len(points) < 3 :
         print("Erreur : nombre de point insuffisant")
         exit()
-    point0=points[-1]
-    point1=points[-2]
-    circuit=[]
-    for i in range(len(points)-3,-3,-1):  
-        print(i)
-        if i == -1:
-            a,b,c=points[1][0],points[0][0],point0[0]
-            r=points[-2][1] 
-        elif i==-2:
-            a,b,c=points[0][0],point0[0],point1[0]
-            r=point0[1]
-        else :
-            c,b,a=[c for c,_ in points[i:i+3]]
-            r=points[-2][1]
+
+    circuit=[alpha(points[1][0]-points[0][0],np.array([1,0]))]
+
+    def update_circuit(a,b,c,r):
         alpha,h=virage(a,b,c,r)
         circuit.append(N(b-a)-h)
         circuit.append((r,alpha))
-        
-        print("Tour",i)
-        print("\t",circuit[-1])
-        print("\t",a,b,c,r)
+
+    for i in range(len(points)-2):  
+        c,b,a=[c for c,_ in points[i:i+3]]
+        r=points[i+1][1]
+        update_circuit(a,b,c,r)
+    #Debut bouclage
+    a,b,c=points[-2][0],points[-1][0],points[0][0]
+    r=points[-1][1] 
+    update_circuit(a,b,c,r)
+    #Fin bouclage
+    a,b,c=points[-1][0],points[0][0],points[1][0]
+    r=points[0][1]
+    update_circuit(a,b,c,r)
+
     return circuit
 
 
