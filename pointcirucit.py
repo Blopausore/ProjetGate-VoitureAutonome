@@ -53,21 +53,21 @@ def points_vers_circuit(points:list):
     point0=points[-1]
     point1=points[-2]
     circuit=[]
-    for i in range(len(points)):  
-        
-        if len(points) == 2:
+    for i in range(len(points)-3,-3,-1):  
+        print(i)
+        if i == -1:
             a,b,c=points[1][0],points[0][0],point0[0]
             r=points[-2][1] 
-        elif len(points)==1:
-            a,b,c=points[-1][0],point0[0],point1[0]
+        elif i==-2:
+            a,b,c=points[0][0],point0[0],point1[0]
             r=point0[1]
         else :
-            c,b,a=[c for c,_ in points[-3:]]
+            c,b,a=[c for c,_ in points[i:i+3]]
             r=points[-2][1]
         alpha,h=virage(a,b,c,r)
         circuit.append(N(b-a)-h)
         circuit.append((r,alpha))
-        points.pop()
+        
         print("Tour",i)
         print("\t",circuit[-1])
         print("\t",a,b,c,r)
