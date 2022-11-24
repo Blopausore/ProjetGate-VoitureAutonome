@@ -1,0 +1,46 @@
+Entrées possibles : (il ne faut pas avoir peur de rajouter des données d'entrée)
+
+- points du lidar, 
+- vitesse actuelle, 
+- accéleration précédente, 
+- sa position, 
+- le chemin qu'il connait à partir d'un trajet précedent, 
+- le chemin qu'il a déjà parcouru 
+- le type de ligne qui arrive (ligne droite, virage vers la gauche ou la droite)
+==> éventuellement infos supplémentaires (longueur de la ligne droite, courbure du virage)
+- largeur de la piste
+- chemin idéal pour optimiser la vitesse (???)
+
+plus tard: 
+- retenir les positions des autres voitures, 
+- estimer leur position future,
+
+
+
+
+Actions possibles :
+
+- modifier l'accélération,
+- modifier la vitesse,
+- modifier l'accélération angulaire, 
+- modifier la vitesse angulaire,
+- modifier la vitesse de rotation de chaque moteur,
+
+plus tard:  "aller vers un point" 
+
+
+
+
+
+Rewards possibles : (valeur pour course, à adapter pour un circuit plus long)
+
+- hors de la route(-1), 
+- percuter d'autres vehicules(-5), 
+- proche du centre(ou du "chemin idéal" si disponible) (jusqu'à 1),
+- action (0.3), 
+- temps(-secondes/10), peut mieux faire
+==> récompense positive pour la vitesse
+- parcourt terminé (20), 
+- mettre des checks points/ zones à atteindres (2)  (pas ouf pour nous)
+
+plus tard : loin des autres vehicules
