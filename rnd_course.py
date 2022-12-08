@@ -57,7 +57,7 @@ class rnd_course(AbstractEnv):
                 "maximum_range": [50],
                 "as_image": False,
                 "align_to_vehicle_axes": True,
-                "cells": 256
+                "cells": 16
             },
             "action": {
                 "type": "ContinuousAction",#classe qui gère les mvts dans le fichier highway-env-master\highway_env\envs\common\action.py
