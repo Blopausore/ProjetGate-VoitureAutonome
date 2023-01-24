@@ -1,0 +1,24 @@
+[0.598s] Invoking command in '/home/cadet/Documents/gate/ros2_ws/src/my_robot_controller': PYTHONPATH=/home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/prefix_override:/home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/build install --record /home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed
+[0.768s] running egg_info
+[0.769s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[0.770s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[0.770s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[0.770s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[0.770s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[0.771s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.772s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.772s] running build
+[0.772s] running build_py
+[0.772s] copying my_robot_controller/noeud_sonar.py -> /home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[0.772s] running install
+[0.773s] running install_lib
+[0.773s] copying /home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/noeud_sonar.py -> /home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.774s] byte-compiling /home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/noeud_sonar.py to noeud_sonar.cpython-310.pyc
+[0.774s] running install_data
+[0.774s] running install_egg_info
+[0.775s] removing '/home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.777s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[0.777s] running install_scripts
+[0.790s] Installing noeud_sonar script to /home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.790s] writing list of installed files to '/home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/install.log'
+[0.812s] Invoked command in '/home/cadet/Documents/gate/ros2_ws/src/my_robot_controller' returned '0': PYTHONPATH=/home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/prefix_override:/home/cadet/Documents/gate/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/build install --record /home/cadet/Documents/gate/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed

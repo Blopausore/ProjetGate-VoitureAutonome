@@ -1,0 +1,3 @@
+[console_scripts]
+noeud_sonar = my_robot_controller.noeud_sonar:main
+
